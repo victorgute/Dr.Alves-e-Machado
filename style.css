@@ -1,0 +1,261 @@
+/* Reset e Configurações Básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0a74da;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffa500;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e69500;
+}
+
+.hero-image img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Seção Problemas */
+.problemas {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.problemas img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Diferenciais */
+.diferenciais {
+    background-color: #f3f3f3;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.diferenciais-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.diferencial {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.diferencial i {
+    font-size: 2rem;
+    color: #0a74da;
+    margin-bottom: 10px;
+}
+
+.diferencial h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Cards de Atuação */
+.atuacao {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Call to Action */
+.cta {
+    background-color: #0a74da;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cta-button {
+    margin-top: 20px;
+}
+
+/* FAQ */
+.faq {
+    padding: 40px 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0a74da;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffa500;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        margin-top: 20px;
+    }
+
+    .diferenciais-container, .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.topo{
+    background-color: #0a74da; /* Fundo preto */
+    padding: 10px 20px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+/* Estilos dos ícones de contato */
+.icons {
+    display: flex;
+    gap: 15px;
+    font-size: 2rem;
+    
+}
+
+
+.icons i {
+    color: white;
+    transition: transform 0.3s;
+    margin-right: 1rem;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.icons p{
+    color:white;
+}
+
+.icons a :hover{
+    color:#0b3863;
+    transition: 0.3s;
+    
+}
+
+.icons :last-child :hover{
+    transform: scale(1.1);
+}
+
+.icons a{
+    display: flex;
+    text-decoration: none;
+}
