@@ -18,6 +18,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: flex-end;
+    
 }
 
 /* Estilos dos ícones de contato */
@@ -58,6 +59,7 @@ body {
     display: flex;
     text-decoration: none;
 }
+
 
 /* Header */
 .hero-section {
@@ -131,42 +133,61 @@ body {
 }
 
 
-.header-content {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    padding-left: 2rem;
-    background-color:#d9b6a3;
-    flex-wrap: wrap;
+
+
+/* Logo */
+.logo {
+    display: block; /* Faz a logo se comportar como um bloco, para centralizar melhor */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: 1rem; /* Espaço abaixo da logo */
 }
 
+/* Conteúdo do Header */
+.header-content {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding-left: 2rem;
+    background-color: #d9b6a3;
+    flex-wrap: wrap;
+    text-align: center; /* Centraliza o texto dentro de .header-text */
+    padding: 2rem;
+}
 
-.header-content a{
+/* Link dentro do Header */
+.header-content a {
     margin-bottom: 1.5rem;
 }
 
+/* Texto dentro do Header */
 .header-text {
-    width: 60%;
+    width: 90%; /* Ajusta a largura do texto */
     padding-right: 20px;
 }
 
-.header-text span{
+/* Destaque do texto */
+.header-text span {
     font-weight: bold;
 }
 
+/* Título dentro do Header */
 .header-text h1 {
     margin-bottom: 15px;
     color: #7b4b3a;
-    width: 120%;
+    font-size: 2rem;
+    width: 100%; /* Ajusta a largura para 100% */
 }
 
+/* Parágrafo dentro do Header */
 .header-text p {
     font-size: 1.4rem;
     line-height: 1.6;
     margin-bottom: 1rem;
-    width: 150%;
+    width: 100%; /* Ajusta a largura para 100% */
 }
 
+/* Imagem dentro do Header */
 .header-image {
     display: flex;
     justify-content: center;
@@ -175,18 +196,9 @@ body {
 
 .header-image img {
     max-width: 400px; /* Largura máxima fixa */
-    margin-left: 5rem;
-    width: 50%;
+    width: 100%;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px; /* Define um tamanho fixo para o logo */
-    margin-bottom: 1rem;
-    margin-left: 44rem;
-}
 
 
 
@@ -1036,9 +1048,7 @@ body {
         width: 500%;
         margin: 5.1rem 6rem 0rem 0.8rem;
     }
-    .header-text img{
-        margin: 0rem 13rem;
-    }
+
 
     .cta-content h2{
         font-size: 1.5rem;
@@ -1153,6 +1163,18 @@ body {
         padding: 0;
     }
 
+    .autism-rights-section h2{
+        font-size: 2rem;
+    }
+
+    .differentials-section h2{
+        font-size: 2rem;
+    }
+
+    .content-text h2{
+        font-size: 2rem;
+    }
+
     .icons p{
         font-size: 1.2rem;
     }
@@ -1175,7 +1197,6 @@ body {
     }
 
 
-
         .hero-image{
             width: 60%;
         }
@@ -1195,13 +1216,10 @@ body {
     }
 
     .section-title, .about-content h2, .content-text h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: 1.6;
     }
 
-    .content-text h2{
-        font-size: 1.2rem;
-    }
 
     .content-text{
         padding: 0;
@@ -1227,7 +1245,11 @@ body {
     }
 
     .logo{
-        width: 80%;
+        width: 30%;
+    }
+
+    .faq-titulo h2{
+        font-size: 2rem;
     }
 
 
@@ -1259,7 +1281,7 @@ body {
         }
 
         .cta-content h2{
-            font-size: 1.2rem;
+            font-size: 2rem;
             white-space:initial;
         }
 
@@ -1282,19 +1304,18 @@ body {
             width: 100%;
         }
     
-        .header-image img {
-            width: 300%; 
-            margin: 0rem 2rem 0rem 0rem;
-        }
+
     
         .header-text h1 {
             font-size: 1.4rem;
+            width: 100%;
         }
     
         .header-text p {
             font-size: 1rem;
             line-height: 1.6;
             margin: 0;
+            width: 100%;
         }
 
     
@@ -1311,8 +1332,7 @@ body {
         }
 
         .header-text img{
-            max-width: 100%;
-            margin: 0.5rem 0rem;
+            max-width: 80%;
         }
 
         .testimonial-section h2{
