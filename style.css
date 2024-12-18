@@ -679,7 +679,7 @@ body {
 }
 
 .cta-content h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #704c2f;
     margin-bottom: 1rem;
     display: flex;
@@ -704,6 +704,68 @@ body {
     display: flex;
     font-size: 1rem;
 }
+
+
+.faq-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.faq-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.faq-question i {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 100px; /* Ajuste conforme o tamanho do conteúdo */
+}
+
+.faq-item.open .faq-question i {
+    transform: rotate(180deg);
+}
+
 
 
 
@@ -881,10 +943,80 @@ body {
 }
 
 
-.star{
-    color: #d3a57f;
+.consultation-section {
+    padding: 60px 0;
+    background-color: rgb(241, 224, 214);
+    padding: 2rem 2rem;
 }
 
+.consultation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.consultation-info {
+    flex: 1;
+    color: rgb(112, 76, 47);
+}
+
+.consultation-info h2 {
+    font-size: 2.5rem;
+    color: rgb(74, 46, 42);
+    margin-bottom: 20px;
+}
+
+.consultation-info p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.consultation-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.consultation-info ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.consultation-info ul a {
+    color: rgb(112, 76, 47);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.consultation-info ul a:hover {
+    color: #a8785d;
+    transform: translateX(5px);
+}
+
+.consultation-info .cta-button {
+    background-color: rgb(217, 182, 163);
+    color: rgb(112, 76, 47);
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-info .cta-button:hover {
+    background-color: rgb(217, 182, 163);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.consultation-map {
+    flex: 1;
+}
 
 
 @media (max-width: 1300px) {
