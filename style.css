@@ -133,13 +133,17 @@ body {
 
 .header-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     padding-left: 2rem;
     background-color:#d9b6a3;
     flex-wrap: wrap;
 }
 
+
+.header-content a{
+    margin-bottom: 1.5rem;
+}
 
 .header-text {
     width: 60%;
@@ -153,12 +157,14 @@ body {
 .header-text h1 {
     margin-bottom: 15px;
     color: #7b4b3a;
+    width: 120%;
 }
 
 .header-text p {
     font-size: 1.4rem;
     line-height: 1.6;
     margin-bottom: 1rem;
+    width: 150%;
 }
 
 .header-image {
@@ -168,15 +174,18 @@ body {
 }
 
 .header-image img {
-    max-width: 600px; /* Largura máxima fixa */
-    margin-right: 7rem;
-    margin-top: 1rem;
+    max-width: 400px; /* Largura máxima fixa */
+    margin-left: 5rem;
+    width: 50%;
 }
 
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px; /* Define um tamanho fixo para o logo */
     margin-bottom: 1rem;
-    margin-left: 20rem;
+    margin-left: 44rem;
 }
 
 
